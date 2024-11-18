@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f0f0;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #30b534;
+    padding: 20px 0;
+    text-align: center;
+    color: rgb(98, 40, 40);
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: rgb(68, 24, 24);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 40px 0;
+}
+
+section h2 {
+    font-size: 2em;
+    color: #1f0a0a;
+    margin-bottom: 20px;
+}
+
+#signs .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: rgb(229, 155, 155);
+    padding: 20px;
+    border-radius: 8px;
+    width: 220px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #010601;
+}
+
+.card p {
+    font-size: 1em;
+    color: #555;
+}
+
+ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* CSS Animation */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+#intro, #signs, #reporting, #resources {
+    animation: fadeIn 2s ease-out;
+}
+#CONTACT{
+    background-color: rgb(104,192,101);
+    background: linear-gradient(90deg, rgba(104,192,101,1) 0%, rgba(5,125,0,1) 35%, rgba(93,241,93,1) 100%);;
+    padding: 50px 0;
+    text-align: center;
+}
+#CONTACT h2{
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#CONTACT p{
+    font-size: 18px;
+    margin-bottom: 20px;
+    color:#333
+}
+.contact-card{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(153, 148, 241);
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+.field{
+    margin-bottom: 20px;
+    text-align: left;
+}
+.field label{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color:#333
+}
+.field input,
+.field text area{
+width: 96%;
+padding: 10px;
+border: 1px solid #6b5a5a;
+border-radius: 16px;
+font-size: 16px;
+}
+.field textarea{
+    height:150px;
+    resize: none;
+    
+}
+
+input[type="submit"]{
+    background-color: #f72a2a;
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1.7rem;
+    font-size: 1.1rem;
+}
